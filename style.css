@@ -1,5 +1,24 @@
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
 }
+
+#demo{
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+h1{
+    font-size: 30px;
+    color: red;
+}
+
+h2{
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-weight: normal;
+    color: #F564A9;
+}    
