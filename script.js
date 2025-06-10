@@ -128,7 +128,26 @@ form.addEventListener("submit", function(event) {
     emailInput.value = ""; //clear the email input field
 });
 
-const myButton2 = document.getElementById("myButton2");
-myButton2.addEventListener("click", function() {
-    body.style.backgroundColor = "#F564A9"; //change the background color of the body when the button is clicked
-});
+
+
+function changeBackgroundAddParagraph() {
+    const body = document.body; //get the body element
+    body.style.backgroundColor = "#ccd4eb"; //change the background color of the body
+
+    const existingParagraph = document.getElementById("my-paragraph"); //get an existing paragraph element
+    if (existingParagraph) {
+        existingParagraph.remove(); //remove the existing paragraph element if it exists
+    }else{
+    const newParagraph = document.createElement("p"); //create a new paragraph element
+    newParagraph.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."; //set text content of the new element
+    newParagraph.id = "my-paragraph"; //set an id for the new paragraph element
+    body.appendChild(newParagraph); //append the new element to the body of the document
+   }
+}
+
+function showHeading() {
+    const input = document.getElementById("inputText").value.trim(); //get the input element
+    const outputArea = document.getElementById("outputArea"); //get the output div element
+    
+    outputArea.innerHTML = input; 
+}

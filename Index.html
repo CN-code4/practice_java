@@ -37,13 +37,23 @@
             <label for="email">Email address:</label><br>
             <h2 id="displayText"></h2>
             <input type="email" id="email" name="email" placeholder="sam5akina@gmail.com" required><br><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message here..." required></textarea><br><br>
 
             <input type="submit" id="submitButton" value="Submit">
         </form>
 
-        <button onclick="myFunction3()">Show more</button>
+        <button onclick="changeBackgroundAddParagraph()">Show more</button><br>
 
-        
+        <input type="text" id="inputText" placeholder="Type something here...">
+        <button onclick="showHeading()">Create</button>
+        <div id="outputDiv">
+            <h1 id="outputArea"></h1>
+        </div>
+
+
+
 
 
        <script src="script.js"></script>
